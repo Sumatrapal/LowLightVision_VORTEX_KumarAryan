@@ -1,5 +1,5 @@
-🌊 Underwater Image Enhancement — AI Summit 2026
-📌 Overview
+### Underwater Image Enhancement — AI Summit 2026
+## Overview
 
 This project implements a deep learning pipeline for underwater image enhancement as part of the AI Summit 2026 Hackathon.
 
@@ -15,7 +15,7 @@ Reduced perceptual quality
 
 Our goal is to restore visual clarity while preserving structural details.
 
-🎯 Objective
+## Objective
 
 Develop a robust enhancement model to:
 
@@ -27,7 +27,7 @@ Improve contrast and sharpness
 
 Preserve structural information
 
-🧠 Model Architecture
+## Model Architecture
 
 We use a Residual U-Net architecture with:
 
@@ -44,13 +44,13 @@ Loss Function:
 Total Loss = 0.7 * L1 + 0.3 * SSIM
 
 
-This balances:
+# This balances:
 
 Pixel-level accuracy (PSNR)
 
 Structural similarity (SSIM)
 
-📊 Evaluation Metrics
+# Evaluation Metrics
 
 The model is evaluated using:
 
@@ -62,7 +62,7 @@ LPIPS (Perceptual similarity)
 
 UCIQE (Underwater Image Quality Evaluation)
 
-📁 Project Structure
+## Project Structure
 underwater-enhancement/
 │
 ├── datasets/
@@ -78,7 +78,7 @@ underwater-enhancement/
 ├── requirements.txt
 └── README.md
 
-🚀 Setup Instructions
+## Setup Instructions
 1️⃣ Create Virtual Environment
 python -m venv venv
 source venv/bin/activate  # Linux
@@ -93,7 +93,7 @@ Or manually:
 pip install torch torchvision torchaudio
 pip install tqdm pillow pytorch-msssim lpips numpy matplotlib
 
-🏋️ Training
+# Training
 
 Run:
 
@@ -112,20 +112,20 @@ Best model is saved as:
 
 best_model.pth
 
-⚡ GPU Support
+# GPU Support
 
 Automatically detects GPU:
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-Optimized for:
+# Optimized for:
 
 RTX 40 series
 
 NVIDIA A100 (DGX environment)
 
-🧪 Inference (Test Set)
+# Inference (Test Set)
 
 After training:
 
@@ -137,7 +137,7 @@ Save outputs with original filenames
 
 Zip results for submission
 
-👨‍💻 Author
+## Author
 
 Team VORTEX
 AI Summit 2026 Participant 
